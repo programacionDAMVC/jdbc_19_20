@@ -1,0 +1,2 @@
+url = BD/uno.db
+driver = jdbc:sqlite:

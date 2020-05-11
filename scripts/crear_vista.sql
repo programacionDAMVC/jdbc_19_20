@@ -1,0 +1,2 @@
+DROP VIEW IF EXISTS curso2A;
+CREATE VIEW curso2A AS select alumno.nombre as nombre, alumno.apellidos, evaluacion.notas, modulo.nombre as nombreModulo from alumno, curso, modulo, evaluacion where alumno.id=evaluacion.idAlumno and curso.id=evaluacion.idCurso and modulo.id=evaluacion.idModulo   and curso.nombre='Segundo A';
